@@ -6,23 +6,23 @@ server:
 
 spring:
   datasource:
-    password:
+    password: postgres
     url: jdbc:postgresql://localhost:5432/registration
-    username:
+    username: postgres
     dialect: org.hibernate.dialect.PostgreSQL15Dialect
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
   mail:
-    host: localhost
-    port: 1025
-    username: hello
-    password: hello
+    host: smtp.office365.com
+    port: 587
+    username: marwa.ghodhbane@ensit.u-tunis.tn
+    password: 3ILyjNJk//
 
     properties:
       mail:

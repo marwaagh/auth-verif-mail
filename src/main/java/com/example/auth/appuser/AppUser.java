@@ -2,6 +2,7 @@ package com.example.auth.appuser;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
@@ -18,8 +19,6 @@ import java.util.Collections;
 @NoArgsConstructor
 @Entity
 public class AppUser implements UserDetails {
-
-
     @SequenceGenerator(
             name = "auth_sequence",
             sequenceName = "auth_sequence",
